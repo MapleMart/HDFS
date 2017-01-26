@@ -84,7 +84,6 @@ public class MyHDFS
 			in.seek(0);
 			out = fs.create(new Path("hdfs://192.168.1.20:9000/test1/b.txt"), new Progressable()
 			{
-				@Override
 				public void progress()
 				{
 					System.out.println(".");
